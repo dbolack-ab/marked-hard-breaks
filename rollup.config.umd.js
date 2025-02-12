@@ -2,7 +2,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      name: 'nonbreaking-spaces',
+      name: 'hard-breaks',
       file: 'lib/index.umd.js',
       format: 'umd'
     }

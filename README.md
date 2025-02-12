@@ -1,41 +1,32 @@
-# marked-justified-paragraphs
+# marked-hard-breaks
 
-Add paragraph alignment attributes to paragraphs using HTML base left, right, and center.
+Force any number blank lines between paragraphs.
 
-## Left
+This requires a `div` class named 'blank' to ensure the expected behavior.
 
-Left-alignment is set by preceeding the paragraph with  `:- `
-
+Example:
 ```
-:- This is my parapgraph.
-```
-
-## Right
-
-Right-alignment is set by preceeding the paragraph with  `-: `
-
-```
--: This is my parapgraph.
+	.blank {
+		height     : 1em;
+		margin-top : 0;
+		& + * { margin-top : 0; }
+	}
 ```
 
-## Center
+## Inserting blanks
 
-Center-alignment is set by preceeding the paragraph with  `:-: `
-
-```
-:-: This is my parapgraph.
-```
+This extensions expects a `:` at the start of a line. Multiple colons are executed as multiple lines.
 
 # Usage
 <!-- Show most examples of how to use this extension -->
 
 ```js
 const marked = require("marked");
-const markedJustifiedParagraphs = require("marked-justified-paragraphs");
+const markedHardBread = require("marked-justified-paragraphs");
 
-marked.use({ extensions: [markedJustifiedParagraphs] });
+marked.use({ extensions: [markedJustifiedParagraphsHardBreaks] });
 
-const html = marked.parse(":-: This is a center justified paragraph.");
+const html = marked.parse("Hello\n:::New paragraph");
 console.log(html);
-// <p>This is <sub>sub</sub> and this is <sup>super</sup>.</p>
+//<p>Hello</p>\n<div class="blank"></div><div class="blank"></div><div class="blank"></div>\n<p>New paragraph</p>\n
 ```

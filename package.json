@@ -1,7 +1,7 @@
 {
-  "name": "marked-nonbreaking-spaces",
+  "name": "marked-hard-breaks",
   "version": "1.0.0",
-  "description": "Nonbreaking Spaces for Marked.js",
+  "description": "Hard Paragraph Breaks for Marked.js",
   "main": "./lib/index.cjs",
   "module": "./src/index.js",
   "browser": "./lib/index.umd.js",
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbolack-ab/marked-nonbreaking-spaces.git"
+    "url": "git+https://github.com/dbolack-ab/marked-hard-breaks.git"
   },
   "author": "David Bolack <abquintic@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dbolack-ab/marked-nonbreaking-spaces/issues"
+    "url": "https://github.com/dbolack-ab/marked-hard-breaks/issues"
   },
-  "homepage": "https://github.com/dbolack-ab/marked-nonbreaking-spaces#readme",
+  "homepage": "https://github.com/dbolack-ab/marked-hard-breaks#readme",
   "peerDependencies": {
     "marked": ">=3 <16"
   },

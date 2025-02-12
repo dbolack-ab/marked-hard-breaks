@@ -1,47 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Non-Breaking Spaces Double Space 1`] = `
-"<p>&nbsp;&nbsp;</p>
+exports[`Hard Breaks Break directly between two paragraphs 1`] = `
+"<p>Line 1</p>
+<div class='blank'></div><div class='blank'></div>
+<p>Line 2</p>
 "
 `;
 
-exports[`Non-Breaking Spaces Ignored inside a code block 1`] = `
+exports[`Hard Breaks Double Break 1`] = `
+"<div class='blank'></div><div class='blank'></div>
+"
+`;
+
+exports[`Hard Breaks Ignored inside a code block 1`] = `
 "<pre><code>
-:&gt;
+:
 </code></pre>
 "
 `;
 
-exports[`Non-Breaking Spaces Many Space 1`] = `
-"<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+exports[`Hard Breaks Many Break 1`] = `
+"<div class='blank'></div><div class='blank'></div><div class='blank'></div><div class='blank'></div><div class='blank'></div><div class='blank'></div><div class='blank'></div><div class='blank'></div><div class='blank'></div><div class='blank'></div>
 "
 `;
 
-exports[`Non-Breaking Spaces Multiple sets of Spaces 1`] = `
-"<p>&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;</p>
+exports[`Hard Breaks Multiple sets of Breaks 1`] = `
+"<div class='blank'></div><div class='blank'></div><div class='blank'></div>
+<div class='blank'></div><div class='blank'></div><div class='blank'></div>
+<div class='blank'></div><div class='blank'></div><div class='blank'></div>
 "
 `;
 
-exports[`Non-Breaking Spaces Pair of inline Spaces 1`] = `
-"<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+exports[`Hard Breaks Single Break 1`] = `
+"<div class='blank'></div>
 "
 `;
 
-exports[`Non-Breaking Spaces Single Space 1`] = `
-"<p>&nbsp;</p>
-"
-`;
-
-exports[`Non-Breaking Spaces Space directly between two paragraphs 1`] = `
-"<p>Line 1
-&nbsp;&nbsp;
-Line 2</p>
-"
-`;
-
-exports[`Non-Breaking Spaces Triple Space 1`] = `
-"<p>&nbsp;&nbsp;&nbsp;</p>
+exports[`Hard Breaks Triple Break 1`] = `
+"<div class='blank'></div><div class='blank'></div><div class='blank'></div>
 "
 `;
