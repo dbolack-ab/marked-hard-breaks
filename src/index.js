@@ -18,8 +18,7 @@ export default function() {
           }
         },
         renderer(token) {
-//          return `<div class='blank'></div>`.repeat(token.length).concat('\n');
-          return `<br />`.repeat(token.length).concat('\n');
+            return `<br>\n`.repeat(token.length);
         }
       }
     ]
