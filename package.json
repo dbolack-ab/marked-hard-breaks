@@ -1,6 +1,6 @@
 {
   "name": "marked-hard-breaks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hard Paragraph Breaks for Marked.js",
   "main": "./lib/index.cjs",
   "module": "./src/index.js",
